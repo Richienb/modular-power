@@ -1,6 +1,6 @@
 {
 	"name": "modular-power",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Find the modulo of a number raised to a power.",
 	"repository": "https://github.com/Richienb/modular-power.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
