@@ -1,15 +1,21 @@
 /**
-My awesome module.
-@param input Lorem ipsum.
-@param postfix Lorem ipsum.
+Find the modulo of a number raised to a power.
+
+@param base The base number to get the exponent of.
+@param exponent The exponent to apply to the base.
+@param modulus The modulus to apply to the exponent of the base.
+
 @example
 ```
-const theModule = require("the-module")
+const modularPower = require("modular-power")
 
-theModule("unicorns")
-//=> "unicorns & rainbows"
+modularPower(2, 3, 3)
+//=> 2
+
+modularPower(2, 3, 5)
+//=> 3
 ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string
+declare function modularPower(base: number, exponent: number, modulus: number): number
 
-export = theModule
+export = modularPower

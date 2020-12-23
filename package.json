@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "modular-power",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Find the modulo of a number raised to a power.",
+	"repository": "https://github.com/Richienb/modular-power.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,7 +17,12 @@
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
+	"keywords": [
+		"power",
+		"modulo",
+		"divide",
+		"math"
+	],
 	"dependencies": {},
 	"devDependencies": {
 		"ava": "^3.13.0",

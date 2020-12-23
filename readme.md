@@ -1,41 +1,45 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# modular-power [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/modular-power/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/modular-power)
 
-My awesome module.
+Find the modulo of a number raised to a power. Similar to the [`pow()`](https://docs.python.org/3/library/functions.html#pow) function in Python.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/modular-power.png)](https://npmjs.com/package/modular-power)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install modular-power
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module")
+const modularPower = require("modular-power")
 
-theModule("unicorns")
-//=> "unicorns & rainbows"
+modularPower(2, 3, 3)
+//=> 2
+
+modularPower(2, 3, 5)
+//=> 3
 ```
 
 ## API
 
-### theModule(input, options?)
+### modularPower(base, exponent, modulo)
 
-#### input
+#### base
 
-Type: `string`
+Type: `number`
 
-Lorem ipsum.
+The base number to get the exponent of.
 
-#### options
+#### exponent
 
-Type: `object`
+Type: `number`
 
-##### postfix
+The exponent to apply to the base.
 
-Type: `string`\
-Default: `rainbows`
+#### modulo
 
-Lorem ipsum.
+Type: `number`
+
+The modulus to apply to the exponent of the base.
