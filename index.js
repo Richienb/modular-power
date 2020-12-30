@@ -25,7 +25,7 @@ module.exports = (base, exponent, modulus) => {
 		}
 
 		exponent >>= 1
-		base = (base * base) % modulus
+		base = (base ** 2) % modulus
 	}
 
 	return result
