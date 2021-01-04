@@ -24,7 +24,7 @@ modularPower(2, 3, 5)
 
 ## API
 
-### modularPower(base, exponent, modulo)
+### modularPower(base, exponent, modulus)
 
 #### base
 
@@ -38,7 +38,7 @@ Type: `number`
 
 The exponent to apply to the base.
 
-#### modulo
+#### modulus
 
 Type: `number`
 
