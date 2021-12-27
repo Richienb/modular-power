@@ -2,20 +2,23 @@
 	"name": "modular-power",
 	"version": "1.0.0",
 	"description": "Find the modulo of a number raised to a power.",
-	"repository": "https://github.com/Richienb/modular-power.git",
-	"author": "Richie Bendall <richiebendall@gmail.com>",
+	"repository": "Richienb/modular-power",
+	"author": {
+		"name": "Richie Bendall",
+		"email": "richiebendall@gmail.com"
+	},
 	"license": "MIT",
-	"main": "index.js",
+	"type": "module",
+	"exports": "./index.js",
 	"files": [
 		"index.js",
 		"index.d.ts"
 	],
 	"engines": {
-		"node": ">=10"
+		"node": ">=12.20"
 	},
 	"scripts": {
-		"lint": "xo",
-		"test": "xo && ava"
+		"test": "xo && ava && tsd"
 	},
 	"keywords": [
 		"power",
@@ -23,13 +26,14 @@
 		"divide",
 		"math"
 	],
-	"dependencies": {},
 	"devDependencies": {
-		"ava": "^3.13.0",
-		"eslint-config-richienb": "^0.5.0",
-		"xo": "^0.33.1"
+		"ava": "^3.15.0",
+		"tsd": "^0.19.0",
+		"xo": "^0.47.0"
 	},
-	"xo": {
-		"extends": "richienb"
+	"tsd": {
+		"compilerOptions": {
+			"target": "es2020"
+		}
 	}
 }

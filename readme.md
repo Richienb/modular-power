@@ -1,8 +1,6 @@
-# modular-power [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/modular-power/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/modular-power)
+# modular-power
 
 Find the modulo of a number raised to a power. Similar to the [`pow()`](https://docs.python.org/3/library/functions.html#pow) function in Python.
-
-[![NPM Badge](https://nodei.co/npm/modular-power.png)](https://npmjs.com/package/modular-power)
 
 ## Install
 
@@ -13,12 +11,12 @@ npm install modular-power
 ## Usage
 
 ```js
-const modularPower = require("modular-power")
+import modularPower from 'modular-power';
 
-modularPower(2, 3, 3)
+modularPower(2, 3, 3);
 //=> 2
 
-modularPower(2, 3, 5)
+modularPower(2, 3, 5);
 //=> 3
 ```
 
@@ -26,20 +24,16 @@ modularPower(2, 3, 5)
 
 ### modularPower(base, exponent, modulus)
 
+The type of return value type and arguments is determined by whether `base` is a `number` or `BigInt`.
+
 #### base
 
-Type: `number`
-
-The base number to get the exponent of.
+The number to be raised to an exponent.
 
 #### exponent
-
-Type: `number`
 
 The exponent to apply to the base.
 
 #### modulus
-
-Type: `number`
 
 The modulus to apply to the exponent of the base.
