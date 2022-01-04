@@ -24,7 +24,7 @@ modularPower(2, 3, 5);
 
 ### modularPower(base, exponent, modulus)
 
-The type of return value type and arguments is determined by whether `base` is a `number` or `BigInt`.
+The type of return value and arguments is determined by whether `base` is a `number` or `BigInt`.
 
 #### base
 
